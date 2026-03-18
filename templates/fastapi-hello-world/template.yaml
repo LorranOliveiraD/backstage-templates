@@ -4,7 +4,7 @@ kind: Template
 metadata:
   name: fastapi-hello-world
   title: FastAPI Hello World
-  description: Cria um novo serviço FastAPI com endpoint GET / retornando Hello World e documentação automática em /docs
+  description: "Cria um novo serviço FastAPI com endpoint GET / retornando Hello World e documentação automática em /docs"
 
 spec:
   owner: team-platform
@@ -21,19 +21,19 @@ spec:
         name:
           title: Nome do Serviço
           type: string
-          description: Nome único do serviço (ex: meu-servico-api). Apenas letras minúsculas, números e hífens.
+          description: "Nome único do serviço (ex: meu-servico-api). Apenas letras minúsculas, números e hífens."
           pattern: '^[a-z0-9-]+$'
           ui:autofocus: true
         description:
           title: Descrição
           type: string
-          description: Descrição do que o serviço faz
+          description: "Descrição do que o serviço faz"
           ui:options:
             rows: 3
         owner:
           title: Dono
           type: string
-          description: Time ou usuário responsável pelo serviço
+          description: "Time ou usuário responsável pelo serviço"
           ui:field: OwnerPicker
           ui:options:
             catalogFilter:
@@ -41,7 +41,7 @@ spec:
         repoUrl:
           title: Repositório no GitHub
           type: string
-          description: Onde o repositório será criado
+          description: "Onde o repositório será criado"
           ui:field: RepoUrlPicker
           ui:options:
             allowedHosts:
