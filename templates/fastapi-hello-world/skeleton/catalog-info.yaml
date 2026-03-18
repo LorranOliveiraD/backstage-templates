@@ -3,7 +3,11 @@ kind: Component
 metadata:
   name: ${{ values.name }}
   description: ${{ values.description }}
+  tags:
+    - python
+    - fastapi
+    - backend
 spec:
   type: service
-  lifecycle: production
+  lifecycle: experimental
   owner: ${{ values.owner }}
