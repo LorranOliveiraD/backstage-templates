@@ -21,7 +21,7 @@ O usuário preenche um formulário com **nome do serviço**, **descrição** e *
 
 ## Como usar
 
-### 1. Registrar no Backstage
+### 1. Registrar no Backstage (via config — mais usado em empresa)
 
 Adicione no `app-config.yaml`:
 
@@ -32,8 +32,10 @@ catalog:
       target: https://github.com/LorranOliveiraD/backstage-templates/blob/main/templates/fastapi-hello-world/template.yaml
       rules:
         - allow:
-            - kind: Template
+            - Template
 ```
+
+**Depois reinicie o Backstage.**
 
 Ou via UI: **Create** → **Register Existing Component** → cole a URL acima.
 
